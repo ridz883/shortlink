@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SannLink - ShortLink Moderen dan mudah di gunakan</title>
+    <title>RidzzLink - ShortLink Moderen dan mudah di gunakan</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            /* TEMA SANN404 SaaS */
+            /* TEMA RIDZZ404 SaaS */
             --bg-main: #ffffff;
             --text-main: #1a1a1a;
             --text-muted: #555555;
@@ -126,13 +126,13 @@
 
         .hero-image-container {
             width: 100%;
-            max-width: 320px; /* Ukuran pas untuk ilustrasi HP */
+            max-width: 320px;
             position: relative;
             border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(47, 114, 253, 0.15); /* Shadow biru halus */
+            box-shadow: 0 15px 35px rgba(47, 114, 253, 0.15);
             background: #fff;
-            line-height: 0; /* Menghilangkan gap bawah image */
+            line-height: 0;
         }
 
         .hero-img {
@@ -272,7 +272,7 @@
 
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="#" class="logo">SannLink</a>
+            <a href="#" class="logo">RidzzLink</a>
             <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
@@ -359,7 +359,7 @@
         </div>
 
         <div id="penjelasan" style="padding-top: 20px;">
-             <h2 class="section-heading">Mengapa SannLink?</h2>
+             <h2 class="section-heading">Mengapa RidzzLink?</h2>
              <p class="hero-desc">Kami menyediakan layanan pemendek URL yang fokus pada kecepatan dan kemudahan pengguna.</p>
              <img src="https://cdn.odzre.my.id/x1o.jpg" style="width: 100%; border-radius: 20px; margin-top: 20px;" alt="Analytics">
         </div>
@@ -368,7 +368,7 @@
     <footer class="mega-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>SannLink</h3>
+                <h3>RidzzLink</h3>
                 <p>Platform utilitas digital sederhana dan bertenaga untuk kebutuhan produktivitas harian Anda.</p>
             </div>
             <div class="footer-col">
@@ -397,7 +397,7 @@
             </div>
         </div>
        <div class="footer-bottom">
-            <div>&copy; 2025 SANN404 Inc. Hak Cipta Dilindungi.</div>
+            <div>&copy; 2025 RIDZZ404 Inc. Hak Cipta Dilindungi.</div>
             <div class="social-icons">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-twitter"></i>
@@ -407,7 +407,6 @@
     </footer>
 
     <script>
-        // UI Interaction Script (Hanya untuk Sidebar)
         const menuBtn = document.getElementById('menuBtn');
         const sidebar = document.getElementById('sidebarMenu');
         const overlay = document.getElementById('sidebarOverlay');
@@ -421,7 +420,6 @@
         closeSidebar.addEventListener('click', toggleSidebar);
         overlay.addEventListener('click', toggleSidebar);
 
-        // --- SCRIPT LOGIKA BISNIS ASLI ---
         const form = document.getElementById('shortenForm');
         const providerSelect = document.getElementById('providerSelect');
         const aliasGroup = document.getElementById('aliasGroup');
@@ -432,7 +430,6 @@
         const btnText = document.getElementById('btnText');
         const spinner = document.getElementById('loadingSpinner');
 
-        // Toggle Custom Alias hanya untuk TinyURL
         providerSelect.addEventListener('change', () => {
             aliasGroup.style.display = providerSelect.value === 'tinyurl' ? 'block' : 'none';
         });
@@ -440,7 +437,6 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            // Reset State
             errorMsg.style.display = 'none';
             resultBox.style.display = 'none';
             submitBtn.disabled = true;
